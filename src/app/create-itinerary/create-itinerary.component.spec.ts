@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreateLibraryComponent } from './create-library.component';
+import { CreateItineraryComponent } from './create-itinerary.component';
 
-describe('CreateLibraryComponent', () => {
-  let component: CreateLibraryComponent;
-  let fixture: ComponentFixture<CreateLibraryComponent>;
+describe('CreateItineraryComponent', () => {
+  let component: CreateItineraryComponent;
+  let fixture: ComponentFixture<CreateItineraryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CreateLibraryComponent]
+      imports: [CreateItineraryComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CreateLibraryComponent);
+    fixture = TestBed.createComponent(CreateItineraryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
