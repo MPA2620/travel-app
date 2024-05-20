@@ -1,27 +1,57 @@
-# TravelGuideApp
+# Travel Itinerary Planner
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## Overview
+The Travel Itinerary Planner is a web application that helps users plan their travel itineraries by suggesting sights and activities based on their preferences. Users can create, save, and share their itineraries, receive personalized recommendations, and interact with an itinerary map.
 
-## Development server
+## Features
+- User authentication and profile management
+- Creating and saving itineraries
+- Personalized recommendations for tourist attractions, restaurants, and events
+- Interactive map to view the itinerary
+- Options to share itineraries with other users
+- Itinerary collaboration
+- Integration with external APIs for flights, hotels, weather updates, and local transportation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies
+- **Frontend**: Angular, Angular Material, Leaflet/Google Maps API
+- **Backend**: Java (Spring Boot), Spring Security, Hibernate
+- **Database**: PostgreSQL
+- **Containerization**: Docker
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
+- Node.js
+- Angular CLI
+- Angular Material
+- Java
+- PostgreSQL
+- Docker
 
-## Build
+### Installation Steps
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### 1. Clone the Repository
+#### 2. Set Up the Backend
+#### 3. Set Up the Frontend
+#### 4. Running the Application with Docker
+#### 5. Deployment with Kubernetes (Optional)
+#### 6. CI/CD with Jenkins (Optional)
 
-## Running unit tests
+## Usage Steps
+1. Register or log in to the application.
+2. Create a new itinerary by entering trip details and preferences.
+3. View the suggested itinerary on the interactive map.
+4. Edit and save the itinerary as needed.
+5. Share the itinerary with friends or collaborators.
+6. Receive real-time updates about weather, events, or any changes related to your itinerary.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contributing
+We welcome contributions! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a new Pull Request.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contact
+For any inquiries, please contact Moldovan Petraș Alexandru(mailto:alexmoldovan0026@gmail.com).
