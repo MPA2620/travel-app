@@ -1,1 +1,37 @@
-<p>create-itinerary works!</p>
+<mat-card class="create-itinerary-card">
+  <h2>Create New Itinerary</h2>
+  <form (ngSubmit)="onSubmit()" #itineraryForm="ngForm">
+    <mat-form-field class="full-width">
+      <mat-label>Title</mat-label>
+      <input matInput type="text" required [(ngModel)]="itinerary.title" name="title">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput required [(ngModel)]="itinerary.description" name="description"></textarea>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Start Date</mat-label>
+      <input matInput [matDatepicker]="startPicker" required [(ngModel)]="itinerary.startDate" name="startDate">
+      <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+      <mat-datepicker #startPicker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>End Date</mat-label>
+      <input matInput [matDatepicker]="endPicker" required [(ngModel)]="itinerary.endDate" name="endDate">
+      <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Destinations</mat-label>
+      <input matInput type="text" required [(ngModel)]="itinerary.destinations" name="destinations" placeholder="Enter destinations separated by commas">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Activities</mat-label>
+      <input matInput type="text" required [(ngModel)]="itinerary.activities" name="activities" placeholder="Enter activities separated by commas">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Create Itinerary</button>
+  </form>
+  <div *ngIf="submitted" class="confirmation-message">
+    <p>Itinerary created successfully!</p>
+  </div>
+</mat-card>

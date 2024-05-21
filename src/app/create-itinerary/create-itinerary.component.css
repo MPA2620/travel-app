@@ -1,0 +1,52 @@
+.create-itinerary-card {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.create-itinerary-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Style for the mat-form-field label and input text */
+.mat-form-field-label {
+  color: rgba(0, 0, 0, 0.6); /* Darker label color */
+}
+
+.mat-input-element {
+  color: rgba(0, 0, 0, 0.87); /* Darker input text color */
+  caret-color: #007bff; /* Custom caret color */
+}
+
+.mat-form-field-outline {
+  color: rgba(0, 0, 0, 0.12); /* Light outline color */
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: rgba(0, 0, 0, 0.54); /* Darker outline when focused */
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-start,
+.mat-form-field-appearance-outline .mat-form-field-outline-end {
+  border-color: rgba(0, 0, 0, 0.12); /* Light outline color */
+}
+
+/* Style for the placeholder text */
+::placeholder {
+  color: rgba(0, 0, 0, 0.38); /* Placeholder text color */
+}
+
+.confirmation-message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}

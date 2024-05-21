@@ -1,4 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Ensure body and html cover full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background image to the whole app */
+  body {
+    background-image: url('https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=193a2&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with the direct URL to your image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Make the background fixed when scrolling */
+    background-position: center; /* Center the background image */
+    color: #333; /* Default text color */
+    font-family: Arial, sans-serif; /* Default font */
+    position: relative;
+    min-height: 100%;
+  }
+  
+  /* Overlay to make content more readable */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Overlay with subtle dark background */
+    z-index: -1; /* Place it behind the content */
+  }
+  
+  mat-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for cards */
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 60px auto; /* Added margin to the top */
+    max-width: 600px;
+  }
+  
+  .navbar {
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent navbar background */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  

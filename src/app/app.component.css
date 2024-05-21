@@ -1,2 +1,45 @@
+/* Apply the new font globally */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Style for the navbar */
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent dark background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
 
-  
+/* Style for the navbar links */
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for icons within links */
+nav a .material-icons {
+  margin-right: 8px;
+}
+
+/* Style for the active navbar link */
+nav a.active-link {
+  background-color: #707070;
+  color: white;
+}
+
+/* Style for the hovered navbar link */
+nav a:hover {
+  background-color: #aaaaaa;
+  color: white;
+}
