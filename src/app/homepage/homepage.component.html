@@ -1,4 +1,4 @@
-<div class="hero-section">
+<div class="hero-section" [ngStyle]="{'opacity' : heroOpacity }">
     <div class="hero-content">
       <h1>Plan Your Perfect Trip</h1>
       <p>Discover, plan, and share your travel adventures with ease.</p>
@@ -9,6 +9,7 @@
       </div>
     </div>
   </div>
-  
+
+  <app-featured-itineraries></app-featured-itineraries>
   <router-outlet></router-outlet>
   

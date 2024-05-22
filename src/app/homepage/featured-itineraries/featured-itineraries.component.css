@@ -1,0 +1,28 @@
+.carousel-container {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  opacity: 0; /* Start hidden */
+  transform: translateX(-20px); /* Start from left */
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth transition */
+}
+
+.itinerary-card {
+  max-width: 600px;
+  margin: auto;
+}
+
+.itinerary-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.itinerary-card h3 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+.itinerary-card p {
+  font-size: 1.3em;
+  color: #555;
+}
