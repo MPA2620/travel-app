@@ -25,6 +25,8 @@
     border-radius: 0 25px 25px 0;
     cursor: pointer;
     align-items: center;
+    background-color: #707070;
+    color: white;
   }
   
   .search-button:hover {

@@ -15,6 +15,7 @@ nav {
   top: 0;
   flex-wrap: wrap; /* Ensure responsiveness */
   padding: 0 10px 0 10px;
+  margin-top: 10px;
 }
 
 /* Style for the logo and website name */
@@ -44,6 +45,12 @@ nav a {
   display: flex;
   align-items: center;
   border-radius: 25px 25px 25px 25px;
+}
+
+/* Remove hover effect for the logo link */
+nav a.logo:hover {
+  background-color: transparent;
+  color: black;
 }
 
 /* Style for icons within links */

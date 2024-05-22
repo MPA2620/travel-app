@@ -1,1 +1,14 @@
-<app-search-bar></app-search-bar>
+<div class="hero-section">
+    <div class="hero-content">
+      <h1>Plan Your Perfect Trip</h1>
+      <p>Discover, plan, and share your travel adventures with ease.</p>
+      <app-search-bar></app-search-bar>
+      <div class="hero-buttons">
+        <button (click)="navigateToCreateItinerary()">Create an Itinerary</button>
+        <button (click)="navigateToRecommendations()">Explore Recommendations</button>
+      </div>
+    </div>
+  </div>
+  
+  <router-outlet></router-outlet>
+  
