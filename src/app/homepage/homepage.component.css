@@ -1,12 +1,14 @@
 /* Hero Section */
 .hero-section {
   position: relative;
-  height: 80vh; /* Adjust height as needed */
+  height: 95vh; /* Adjust height as needed */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
+  margin-top: 50px; /* Ensure some spacing from the navbar */
+  transition: opacity 0.5s; /* Smooth transition for the fade effect */
 }
 
 .hero-content {
@@ -40,7 +42,7 @@
   margin: 0 10px;
   font-size: 1em;
   cursor: pointer;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 25px;
   transition: background-color 0.3s;
 }
 

@@ -1,0 +1,15 @@
+<div class="carousel-container" [ngStyle]="{ 'opacity': opacity, 'transform': transform }">
+  <owl-carousel-o [options]="carouselOptions">
+    <ng-container *ngFor="let itinerary of itineraries">
+      <ng-template carouselSlide>
+        <mat-card class="itinerary-card">
+          <img mat-card-image [src]="itinerary.image" alt="Image of {{itinerary.title}}">
+          <mat-card-content>
+            <h3>{{itinerary.title}}</h3>
+            <p>{{itinerary.description}}</p>
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>

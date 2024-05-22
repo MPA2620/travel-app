@@ -8,12 +8,14 @@ import { SearchItinerariesComponent } from './search-itineraries/search-itinerar
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/homepage', pathMatch: 'full' }, // Default route
   { path: 'homepage', component: HomepageComponent },
   { path: 'create-itinerary', component: CreateItineraryComponent },
   { path: 'itinerary-details/:id', component: ItineraryDetailsComponent },
   { path: 'recommendations', component: RecommendationsComponent },
   { path: 'search-itineraries', component: SearchItinerariesComponent },
-  { path: 'user-profile', component: UserProfileComponent }
+  { path: 'user-profile', component: UserProfileComponent },
+  { path: '**', redirectTo: '/homepage' } // Fallback route
 ];
 
 export { routes };

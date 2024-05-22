@@ -17,6 +17,8 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
 import { SearchItinerariesComponent } from './search-itineraries/search-itineraries.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { SearchBarComponent } from './homepage/search-bar/search-bar.component';
+import { FeaturedItinerariesComponent } from './homepage/featured-itineraries/featured-itineraries.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { SearchBarComponent } from './homepage/search-bar/search-bar.component';
     RecommendationsComponent,
     SearchItinerariesComponent,
     UserProfileComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    FeaturedItinerariesComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { SearchBarComponent } from './homepage/search-bar/search-bar.component';
     MatButtonModule,
     MatCardModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
