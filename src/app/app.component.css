@@ -1,19 +1,37 @@
-/* Apply the new font globally */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
+
 /* Style for the navbar */
 nav {
   display: flex;
-  justify-content: right;
+  justify-content: space-between; /* Distribute space between logo and links */
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent dark background */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   flex-wrap: wrap; /* Ensure responsiveness */
+  padding: 0 10px 0 10px;
+}
+
+/* Style for the logo and website name */
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 0px;
+}
+
+nav .logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
 }
 
 /* Style for the navbar links */
@@ -25,6 +43,7 @@ nav a {
   font-weight: 500;
   display: flex;
   align-items: center;
+  border-radius: 25px 25px 25px 25px;
 }
 
 /* Style for icons within links */

@@ -16,6 +16,7 @@ import { ItineraryDetailsComponent } from './itinerary-details/itinerary-details
 import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { SearchItinerariesComponent } from './search-itineraries/search-itineraries.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { SearchBarComponent } from './homepage/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     ItineraryDetailsComponent,
     RecommendationsComponent,
     SearchItinerariesComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
