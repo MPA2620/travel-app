@@ -1,8 +1,8 @@
-<div class="carousel-container" [ngStyle]="{ 'opacity': opacity, 'transform': transform }">
+<div class="carousel-container" [ngStyle]="{ 'opacity': opacity, 'transform': transform, 'filter': blur }">
   <owl-carousel-o [options]="carouselOptions">
-    <ng-container *ngFor="let itinerary of itineraries">
+    <ng-container *ngFor="let itinerary of itineraries; let i = index">
       <ng-template carouselSlide>
-        <mat-card class="itinerary-card">
+        <mat-card class="itinerary-card" [ngStyle]="{ 'opacity': opacity, 'transform': transform, 'filter': blur, 'transition-delay': delays[i] }">
           <img mat-card-image [src]="itinerary.image" alt="Image of {{itinerary.title}}">
           <mat-card-content>
             <h3>{{itinerary.title}}</h3>

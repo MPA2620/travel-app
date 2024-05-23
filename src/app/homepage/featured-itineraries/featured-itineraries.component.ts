@@ -5,15 +5,17 @@ import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
   templateUrl: './featured-itineraries.component.html',
   styleUrls: ['./featured-itineraries.component.css'],
 })
-
 export class FeaturedItinerariesComponent implements OnInit {
   opacity: number = 0;
   transform: string = 'translateX(-20px)';
+  blur: string = 'blur(10px)';
+  delays: string[] = [];
 
   constructor(private el: ElementRef) {}
 
   ngOnInit(): void {
     this.checkVisibility();
+    this.setDelays();
   }
 
   @HostListener('window:scroll', [])
@@ -26,17 +28,24 @@ export class FeaturedItinerariesComponent implements OnInit {
     const rect = element.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    // Calculate the opacity and transform based on the element's visibility in the viewport
     if (rect.top < windowHeight && rect.bottom > 0) {
       const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
       const totalHeight = Math.min(windowHeight, rect.height);
       const visibilityRatio = visibleHeight / totalHeight;
       this.opacity = visibilityRatio;
-      this.transform = `translateX(${(1 - visibilityRatio) * -150}px)`; // Increase distance for a more aggressive effect
+      this.transform = `translateX(${(1 - visibilityRatio) * -150}px)`;
+      this.blur = `blur(${10 - (visibilityRatio * 10)}px)`;
     } else {
       this.opacity = 0;
-      this.transform = 'translateX(-150px)'; // Increase distance for a more aggressive effect
+      this.transform = 'translateX(-150px)';
+      this.blur = 'blur(10px)';
     }
+  }
+
+  setDelays() {
+    this.itineraries.forEach((_, index) => {
+      this.delays[index] = `${index * 0.3}s`; // 0.3s delay between each card
+    });
   }
 
   itineraries = [
@@ -55,7 +64,6 @@ export class FeaturedItinerariesComponent implements OnInit {
       description: 'Experience the Big Apple like never before.',
       image: 'https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }
-    // Add more itineraries as needed
   ];
 
   carouselOptions = {

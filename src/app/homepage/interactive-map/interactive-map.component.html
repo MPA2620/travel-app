@@ -1,0 +1,11 @@
+<div id="interactiveMap" class="google-map-container">
+    <google-map [center]="center" [zoom]="zoom" [options]="mapOptions">
+      <map-marker *ngFor="let marker of markers"
+                  [position]="marker.position"
+                  [title]="marker.title"
+                  (mapClick)="openInfoWindow(marker)">
+      </map-marker>
+      <map-info-window>{{ selectedInfoWindow }}</map-info-window>
+    </google-map>
+  </div>
+  

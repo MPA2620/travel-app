@@ -8,7 +8,7 @@
   color: white;
   text-align: center;
   margin-top: 50px; /* Ensure some spacing from the navbar */
-  transition: opacity 0.5s; /* Smooth transition for the fade effect */
+  transition: opacity 0.5s, filter 0.5s; /* Smooth transition for the fade and blur effects */
 }
 
 .hero-content {
@@ -49,3 +49,4 @@
 .hero-buttons button:hover {
   background-color: #aaaaaa;
 }
+

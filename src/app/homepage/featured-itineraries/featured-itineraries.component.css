@@ -4,12 +4,17 @@
   margin-bottom: 40px;
   opacity: 0; /* Start hidden */
   transform: translateX(-20px); /* Start from left */
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth transition */
+  filter: blur(10px); /* Initial blur */
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out; /* Smooth transition */
 }
 
 .itinerary-card {
   max-width: 600px;
   margin: auto;
+  opacity: 0; /* Start hidden */
+  transform: translateX(-20px); /* Start from left */
+  filter: blur(10px); /* Initial blur */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, filter 0.5s ease-out; /* Smooth transition */
 }
 
 .itinerary-card img {
