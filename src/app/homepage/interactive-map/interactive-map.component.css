@@ -1,0 +1,16 @@
+/* Ensure the entire map container is centered and responsive */
+.google-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Optional: Add padding inside the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.365); /* Optional: Add a subtle shadow */
+  margin-top: 250px;
+  margin-bottom: 20px;
+}
+
+/* Style the google-map element */
+google-map {
+  height: 500px;
+  width: 500px;
+}

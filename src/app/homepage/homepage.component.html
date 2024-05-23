@@ -1,15 +1,15 @@
-<div class="hero-section" [ngStyle]="{'opacity' : heroOpacity }">
-    <div class="hero-content">
-      <h1>Plan Your Perfect Trip</h1>
-      <p>Discover, plan, and share your travel adventures with ease.</p>
-      <app-search-bar></app-search-bar>
-      <div class="hero-buttons">
-        <button (click)="navigateToCreateItinerary()">Create an Itinerary</button>
-        <button (click)="navigateToRecommendations()">Explore Recommendations</button>
-      </div>
+<div class="hero-section" [ngStyle]="{'opacity': heroOpacity, 'filter': heroBlur}">
+  <div class="hero-content">
+    <h1>Plan Your Perfect Trip</h1>
+    <p>Discover, plan, and share your travel adventures with ease.</p>
+    <app-search-bar (search)="handleSearch($event)"></app-search-bar>
+    <div class="hero-buttons">
+      <button (click)="navigateToCreateItinerary()">Create an Itinerary</button>
+      <button (click)="navigateToRecommendations()">Explore Recommendations</button>
     </div>
   </div>
+</div>
 
-  <app-featured-itineraries></app-featured-itineraries>
-  <router-outlet></router-outlet>
-  
+<app-featured-itineraries></app-featured-itineraries>
+<app-interactive-map [searchQuery]="searchQuery"></app-interactive-map>
+<router-outlet></router-outlet>
